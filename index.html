@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+
+  <div class="logo">
+    FITAI
+  </div>
+
+  <div class="perfil" id="perfil-area">
+    <button onclick="mostrarLogin()">Iniciar sesión</button>
+  </div>
+
+</header>
+
+  <h1>Generador de Rutina</h1>
+
+  <form id="formulario">
+    <input type="number" id="peso" placeholder="Peso (kg)" required>
+    <input type="number" id="altura" placeholder="Altura (cm)" required>
+    <input type="number" id="edad" placeholder="Edad" required>
+
+    <select id="objetivo" required>
+      <option value="">Selecciona objetivo</option>
+      <option value="fuerza">Fuerza</option>
+      <option value="volumen">Volumen</option>
+      <option value="definicion">Definición</option>
+    </select>
+
+    <button type="submit">Generar Rutina</button>
+  </form>
+
+  <div id="rutina">
+
+    <div class="progreso-barra">
+      <div id="barra-progreso"></div>
+    </div>
+
+  
+
+    <!-- aquí se genera la rutina con JS -->
+
+  </div>
+
+  <button id="terminarSemana" onclick="terminarSemana()">Terminar semana</button>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
